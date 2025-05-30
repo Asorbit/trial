@@ -1,18 +1,13 @@
 import React from 'react';
 
-interface NavItem {
-  name: string;
-  href: string;
-}
-
-const navItems: NavItem[] = [
+const navItems = [
   { name: 'HOME', href: '#home' },
   { name: 'TOOLS', href: '#tools' },
   { name: 'ABOUT', href: '#about' },
 ];
 
-export const Header: React.FC = () => {
-  const [activeItem, setActiveItem] = React.useState<string>('HOME');
+export const Header = () => {
+  const [activeItem, setActiveItem] = React.useState('HOME');
 
   return (
     <header className="py-2 px-4 sm:px-6 lg:px-8 sticky top-0 z-50 bg-black/20 backdrop-blur-lg border-b border-white/10 shadow-md">

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Define the ArrowRightIcon SVG directly within Hero.tsx
-const ArrowRightSvgIcon: React.FC<{ className?: string }> = ({ className }) => (
+const ArrowRightSvgIcon = ({ className }) => (
   <svg
     className={className}
     xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ const ArrowRightSvgIcon: React.FC<{ className?: string }> = ({ className }) => (
   </svg>
 );
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   return (
     <div className="py-16 md:py-24 lg:py-32">
       <h1
